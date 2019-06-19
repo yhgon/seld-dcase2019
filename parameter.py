@@ -11,18 +11,18 @@ def get_params(argv):
         quick_test=True,     # To do quick test. Trains/test on small subset of dataset, and # of epochs
 
         # INPUT PATH
-        dataset_dir='/proj/asignal/DCASE2019/dataset/',  # Base folder containing the foa/mic and metadata folders
+        dataset_dir='/content/dataset/',  # Base folder containing the foa/mic and metadata folders
 
         # OUTPUT PATH
-        feat_label_dir='/proj/asignal/DCASE2019/dataset/feat_label/',  # Directory to dump extracted features and labels
-        model_dir='models/',   # Dumps the trained models and training curves in this folder
+        feat_label_dir='/content/dataset/feat_label/',  # Directory to dump extracted features and labels
+        model_dir='/content/seld-dcase2019/models/',   # Dumps the trained models and training curves in this folder
         dcase_output=True,     # If true, dumps the results recording-wise in 'dcase_dir' path.
                                # Set this true after you have finalized your model, save the output, and submit
-        dcase_dir='results/',  # Dumps the recording-wise network output in this folder
+        dcase_dir='/content/seld-dcase2019/results/',  # Dumps the recording-wise network output in this folder
 
         # DATASET LOADING PARAMETERS
         mode='dev',         # 'dev' - development or 'eval' - evaluation dataset
-        dataset='foa',       # 'foa' - ambisonic or 'mic' - microphone signals
+        dataset='mic',       # 'foa' - ambisonic or 'mic' - microphone signals
 
         # DNN MODEL PARAMETERS
         sequence_length=128,        # Feature sequence length
