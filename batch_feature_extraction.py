@@ -7,8 +7,8 @@ process_str = 'dev'  # 'dev, eval' 'dev' or 'eval' will extract features for the
 #  'dev, eval' will extract features of both sets together
 
 dataset_name = 'mic'  # 'foa' -ambisonic or 'mic' - microphone signals
-dataset_dir = '/content/dataset/'   # Base folder containing the foa/mic and metadata folders
-feat_label_dir = '/content/dataset/feat_label_tmp/'  # Directory to dump extracted features and labels
+dataset_dir = '/mnt/workspace/jupyter/dataset/'   # Base folder containing the foa/mic and metadata folders
+feat_label_dir = '/mnt/workspace/jupyter/dataset/feat_label_tmp'  # Directory to dump extracted features and labels
 
 
 if 'dev' in process_str:
